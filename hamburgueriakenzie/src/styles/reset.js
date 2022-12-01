@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 :root {
   --Color-primary: #27ae60;
   --Color-primary-50: #93d7af;
@@ -139,3 +142,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+
+`;

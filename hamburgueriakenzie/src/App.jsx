@@ -51,8 +51,8 @@ function App() {
     }
   }
 
-  function removeCartTotal(valor) {
-    setCartTotal([parseInt(cartTotal) - parseInt(valor)]);
+  function removeCartTotal(value) {
+    setCartTotal([parseInt(cartTotal) - parseInt(value)]);
   }
 
   function removeCurretSale(element) {
@@ -65,7 +65,7 @@ function App() {
     async function getProducts() {
       try {
         const response = await Api.get("");
-        console.log(response);
+
         setProducts(response.data);
       } catch (error) {
         console.log(error);
